@@ -1,0 +1,96 @@
+!Output Options
+OUTPUT_TIME               : 
+!TIME_SERIE_LOCATION       : ../GeneralData/Timeseries/TimeSeriesLocation.dat
+
+<beginproperty>
+NAME                      : precipitation
+UNITS                     : mm
+DESCRIPTION               : precipitation
+FILE_IN_TIME              : MULTITIMESERIE
+ASCII_MASK_FILENAME       : 
+DATA_PROCESSING           : 2  !1 is Interpolate. 2 is Accumulate. 3 is No Processing (use original value)
+DEFAULTVALUE              : 0.0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+ACCUMULATE_VALUES         : 1
+
+<BeginStation>
+FILL_ID                   : 
+REMAIN_CONSTANT           : 
+FILE_NAME                 : 
+DATA_COLUMN               : 
+<EndStation>
+<endproperty>
+
+<beginproperty>
+NAME                      : wind velocity
+UNITS                     : m/s
+DESCRIPTION               : wind velocity
+DEFAULTVALUE              : 0.0 0.0
+REMAIN_CONSTANT           : 1
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : wind modulus
+UNITS                     : m/s
+DESCRIPTION               : wind modulus
+FILE_IN_TIME              : TIMESERIE
+FILENAME                  : 
+DATA_COLUMN               : 
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : solar radiation
+UNITS                     : W/m2
+DESCRIPTION               : Climatologic Solar Radiation
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : TIMESERIE
+FILENAME                  : 
+DATA_COLUMN               : 
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : air temperature
+UNITS                     : C
+DESCRIPTION               : air temperature
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : TIMESERIE
+FILENAME                  : 
+DATA_COLUMN               : 
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : relative humidity
+UNITS                     : fraction
+DESCRIPTION               : relative humidity
+DEFAULTVALUE              : 0.0
+FILE_IN_TIME              : TIMESERIE
+FILENAME                  : 
+DATA_COLUMN               : 
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>
+
+<beginproperty>
+NAME                      : cloud cover
+UNITS                     : fraction
+DESCRIPTION               : cloud cover from solar radiation
+DEFAULTVALUE              : 0.0
+CLOUD_COVER_METHOD        : 3
+REMAIN_CONSTANT           : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 1
+<endproperty>

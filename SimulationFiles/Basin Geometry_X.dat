@@ -1,0 +1,8 @@
+!
+!Values found in this file must be consistent with values used during watershed delineation
+!
+!Compute Options
+TRESHOLD_AREA             : 
+DELINEATE_BASIN           : 
+OUTLET_I                  : 
+OUTLET_J                  : 

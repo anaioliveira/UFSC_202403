@@ -1,0 +1,136 @@
+CONTINUOUS                 : 0
+VEGETATION_DT              : 86400
+INTEGRATION_DT             : 3600
+
+!Agricultural practices
+<begin_AgriculturalPractices>
+INITIALIZATION_METHOD      : 
+FILENAME                   : 
+DEFAULTVALUE               : 
+REMAIN_CONSTANT            : 
+<end_AgriculturalPractices>
+
+PARAMETERS_FILE            : 
+
+GRAZING                    : 0
+HARVEST_KILL               : 1
+DORMANCY                   : 1
+FERTILIZATION              : 0
+PESTICIDE                  : 0
+
+MODEL_EVOLUTION            : 2
+GROWTH_DATABASE            : 
+
+!Vegetation stress and uptake simulation
+WATER_UPTAKE               : 1
+WATER_STRESS               : 1
+TEMPERATURE_STRESS         : 1
+NITROGEN_STRESS            : 0
+PHOSPHORUS_STRESS          : 0
+
+WATER_UPTAKE_METHOD        : 1
+LIMIT_TRANSP_WATER_VEL     : 0
+ROOT_PROFILE               : 1
+WATER_UPTAKE_STRESS_METHOD : 1
+FEDDES_DATABASE            : 
+
+!Output Options
+TIME_SERIE_LOCATION        : 
+OUTPUT_TIME                : 
+
+<begin_TotalPotentialHU>
+INITIALIZATION_METHOD      : CONSTANT
+DEFAULTVALUE               : 7665.
+REMAIN_CONSTANT            : 0
+<end_TotalPotentialHU>
+
+!Vegetation properties
+<beginproperty>
+NAME                       : specific leaf storage
+UNITS                      : m3/m2
+DESCRIPTION                : plant specific leaf storage
+FILE_IN_TIME               : NONE
+INITIALIZATION_METHOD      : CONSTANT
+DEFAULTVALUE               : 0.001
+REMAIN_CONSTANT            : 1
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+EVOLUTION                  : 1
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : crop coefficient
+UNITS                      : -
+DESCRIPTION                : plant transpiration coefficient
+DEFAULTVALUE               : 0.0
+INITIALIZATION_METHOD      : CONSTANT
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+EVOLUTION                  : 2
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : root depth
+UNITS                      : m
+DESCRIPTION                : plant root depth
+INITIALIZATION_METHOD      : CONSTANT
+DEFAULTVALUE               : 0.0
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+EVOLUTION                  : 2
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : leaf area index
+UNITS                      : m2/m2
+DESCRIPTION                : plant leaf area index
+INITIALIZATION_METHOD      : CONSTANT
+DEFAULTVALUE               : 0.0
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+EVOLUTION                  : 2
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : root biomass
+UNITS                      : kg/ha
+DESCRIPTION                : root biomass
+INITIALIZATION_METHOD      : CONSTANT
+DEFAULTVALUE               : 0.0
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+EVOLUTION                  : 2
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : total plant biomass
+UNITS                      : kg/ha
+DESCRIPTION                : plant biomass
+EVOLUTION                  : 2
+DEFAULTVALUE               : 0.
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+OLD                        : 0
+<endproperty>
+
+<beginproperty>
+NAME                       : canopy height
+UNITS                      : m
+DESCRIPTION                : plant canopy height
+EVOLUTION                  : 2
+DEFAULTVALUE               : 0.
+REMAIN_CONSTANT            : 0
+OUTPUT_HDF                 : 1
+TIME_SERIE                 : 1
+OLD                        : 0
+<endproperty>

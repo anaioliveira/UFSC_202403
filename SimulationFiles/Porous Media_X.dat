@@ -1,0 +1,83 @@
+!Start / Continuous Computation
+CONTINUOUS                : 0
+
+!Horizon Block - 0-0.3
+<beginhorizon>
+KLB                       : 
+KUB                       : 
+
+<beginproperty>
+NAME                      : SoilID
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : 
+DEFAULTVALUE              : 1
+REMAIN_CONSTANT           : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : Theta
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.25
+<endproperty>
+<endhorizon>
+
+!Soil Properties
+!Horizon 0-0.3
+<beginsoiltype>
+ID           : 1.0
+THETA_R      : 0.1158
+THETA_S      : 0.4466
+N_FIT        : 2.2802
+SAT_K        : 2.187e-06
+ALPHA        : 1.423
+L_FIT        : 0.5
+<endsoiltype>
+
+CONDUTIVITYFACE           : 
+
+!Compute Options
+THETA_HYDRO_COEF          : 0.98
+CUT_OFF_THETA_HIGH        : 1e-20
+CUT_OFF_THETA_LOW         : 1e-15
+BOTTOM_FILE               : 
+
+IGNORE_WATER_COLUMN_ON_EVAP :  0
+LIMIT_EVAP_WATER_VEL      : 1
+LIMIT_EVAP_HEAD           : 0
+HEAD_LIMIT                : -150
+
+HORIZONTAL_K_FACTOR       : 
+FC_K_FACTOR               : 
+DN_LINK_AREA_METHOD       : 2
+
+!Stability Options
+STABILIZE                 : 1
+STABILIZE_FACTOR          : 0.05
+MIN_ITERATIONS            : 2
+MAX_ITERATIONS            : 1000
+DT_FACTOR                 : 1.5
+
+!Ground Water Aquifer Initialization
+<beginwaterlevel>
+NAME                      : waterlevel
+INITIALIZATION_METHOD     : ASCII_FILE
+FILENAME                  : 
+DEFAULTVALUE              : 0.0
+REMAIN_CONSTANT           : 0
+<endwaterlevel>
+
+START_WITH_FIELD          : 0
+
+!Impermeable Fraction
+<beginimpermeablefraction>
+NAME                      : impermeablefraction
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0
+REMAIN_CONSTANT           : 0
+<endimpermeablefraction>
+
+!Output Options
+OUTPUT_TIME               : 
+TIME_SERIE                : 0
+TIME_SERIE_LOCATION       : 
+
